@@ -1,0 +1,32 @@
+<div class="skill-board__content">
+    {{#if isEmpty}}
+        <div class="skill-board__is-empty">
+            <p>{{localize "SKILL-BOARD.empty-message"}}</p>
+        </div>
+    {{else}}
+        <div class="skill-board__header">
+            <div class="skill-board__skill-col"></div>
+
+            {{#each actors as |actor|}}
+                <div class="skill-board__actor-col skill-board__actorlink" data-actorid="{{actor.actor.id}}">
+                    <img src="{{actor.image}}" />
+                    <div class="skill-board__actor-name">{{actor.name}}</div>
+                </div>
+            {{/each}}
+        </div>
+
+        {{#each skills as |skill s|}}
+        <div class="skill-board__skill-row">
+            <div class="skill-board__skill-col">{{skill.label}}</div>
+
+            {{#each ../actors as |actor|}}
+                {{#with (lookup actor.skills s) as |skill|}}
+                    <div class="skill-board__actor-col skill-board__rollable" data-skill="{{s}}" data-actorid="{{actor.actor.id}}">
+                        <a>{{numberFormat skill.total decimals=0 sign=true}}</a>
+                    </div>
+                {{/with}}
+            {{/each}}
+        </div>
+        {{/each}}
+    {{/if}}
+</div>

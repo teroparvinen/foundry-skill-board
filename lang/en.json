@@ -1,0 +1,10 @@
+{
+    "SKILL-BOARD": {
+        "app-title": "Skill Board",
+        "hotkey-binding": "Toggle panel",
+        "render-as-popout": "Use popout (transparent) visual style",
+        "add-to-board": "Add to Skill Board",
+        "remove-from-board": "Remove from Skill Board",
+        "empty-message": "No actors activated. Add some from the actor sidebar context menu."
+    }
+}

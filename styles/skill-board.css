@@ -1,0 +1,48 @@
+.skill-board__content {
+    padding: 10px;
+}
+
+.skill-board__is-empty {
+    width: 300px;
+    text-align: center;
+    padding: 60px;
+}
+
+.skill-board__header,
+.skill-board__skill-row {
+    display: flex;
+    padding: 4px 0;
+}
+
+.skill-board__actor-col img {
+    width: 65px;
+    height: 65px;
+    border: 0;
+}
+
+.sidebar-popout .skill-board__skill-row:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.skill-board__skill-row:nth-child(even) {
+    background-color: var(--faint-color);
+}
+
+.skill-board__actor-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.skill-board__skill-col {
+    width: 150px;
+}
+
+.skill-board__actor-col {
+    width: 70px;
+    text-align: center;
+}
+
+.skill-board__actorlink {
+    cursor: pointer;
+}

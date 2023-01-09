@@ -1,0 +1,38 @@
+{
+    "id": "skill-board",
+    "title": "Skill Board",
+    "description": "A hotkeyable skill sheet, optionally supporting multiple characters",
+    "authors": [
+        {
+            "name": "Tero Parvinen (Whistler#3253)"
+        }
+    ],
+    "version": "10.0",
+    "compatibility": {
+        "minimum": 10,
+        "verified": 10
+    },
+    "relationships": {
+        "systems": [{
+            "id": "dnd5e",
+            "type": "system"
+        }]
+    },
+    "esmodules": [
+        "./module/skill-board.js"
+    ],
+    "styles": [
+        "styles/skill-board.css"
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "./lang/en.json"
+        }
+    ],
+    "url": "https://github.com/teroparvinen/foundry-skill-board",
+    "bugs": "https://github.com/teroparvinen/foundry-skill-board/issues",
+    "manifest": "https://github.com/teroparvinen/foundry-skill-board/releases/latest/download/module.json",
+    "download": "https://github.com/teroparvinen/foundry-skill-board/releases/latest/download/module.zip"
+}
